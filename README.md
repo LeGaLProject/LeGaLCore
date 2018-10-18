@@ -38,3 +38,16 @@ requirements | List of values | Stores a list of required missions.
   <media id="mdVideo" type="video/3gpp" src="media/thirdChurchIndicator.3gp"/>
 </context>
 ```
+
+### Game Action and Score
+
+There are four types of actions supported by LeGaL: execute, create, collect, and drop media. We can use the action property to store the desired action when defining a media. The property receives an integer value between 0 and 3 representing the corresponding action. In example above, we don't explicitly set this property in the mdVideo media code, so it assumes the value 0 (execute) by default. The  execute action consists of exhibiting one or more media, such as playing an audio or video, displaying a text or visualising a 3D object. The create action allows players to create their own game media, like images and videos. Additionally, the drop media action enables players to place a media in a determined location and the collect action allow players to collect media placed in a specific location. Table below presents each value.
+
+Value | Description
+--- | ---
+execute (0) | Run a media.
+collect (1) | Catch a media.
+create (2) | Create a media.
+drop (3) | Drop a media.
+
+At runtime, a player is rewarded with a score for every mission or action completed. The same actions presented in Section~\ref{subsubsec:actions} can have a matching reward. To implement such system, a score property was added to missions and media, thus defining the reward for each action executed by the players. This parameter can assume positive integer values.
