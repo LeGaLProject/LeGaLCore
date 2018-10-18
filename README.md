@@ -20,7 +20,7 @@ There are some new attributes and extensions done to NCL in order to support the
 
 We add some properties to the context node for representing mission information. For instance, the number of times a mission can be played, which missions are required to be played before playing the others, and others. In example below, we show the use of these properties for the running example description. The occurrence property defines the msSecondChurch mission can be played as many times as the player wants, the mandatory property says the mission is mandatory to finish the game and the visibility sets the mission is always visible to the player. Table contains four of these properties and its possible values.
 
-### Configurable Props
+#### Configurable Props
 * [mandatory](#mandatory)
 * [occurrence](#occurrence)
 * [visibility](#visibility)
@@ -33,6 +33,7 @@ occurrence | positive integer | Sets how many times the mission can be executed.
 visibility | true or false | Indicates if a mission can be executed.
 requirements | list of values | Stores a list of required missions.
 
+Example:
 ``` xml
 <context id="msSecondChurch">
   <port id="pSecondChurch" component="locSecondChurch"/>
@@ -49,6 +50,10 @@ requirements | list of values | Stores a list of required missions.
 
 There are four types of actions supported by LeGaL: execute, create, collect, and drop media. We can use the action property to store the desired action when defining a media. The property receives an integer value between 0 and 3 representing the corresponding action. In example above, we don't explicitly set this property in the mdVideo media code, so it assumes the value 0 (execute) by default. The  execute action consists of exhibiting one or more media, such as playing an audio or video, displaying a text or visualising a 3D object. The create action allows players to create their own game media, like images and videos. Additionally, the drop media action enables players to place a media in a determined location and the collect action allow players to collect media placed in a specific location. Table below presents each value.
 
+#### Configurable Props
+* [action](#action)
+* [score](#score)
+
 Value | Description
 --- | ---
 execute (0) | Run a media.
@@ -56,7 +61,21 @@ collect (1) | Catch a media.
 create (2) | Create a media.
 drop (3) | Drop a media.
 
+Example:
+``` xml
+<media id="mdImage" ... >
+  <property name="action" value="execute"/> ...
+</media>
+```
+
 At runtime, a player is rewarded with a score for every mission or action completed. The same actions presented in Section~\ref{subsubsec:actions} can have a matching reward. To implement such system, a score property was added to missions and media, thus defining the reward for each action executed by the players. This parameter can assume positive integer values.
+
+Example:
+``` xml
+<context id="msFirst" ... >
+  <property name="score" value="30"/> ...
+</context>
+```
 
 ### Spatial Data and Relationships
 
@@ -82,7 +101,7 @@ GML code example below describes the locSecondChurch node, which represents a ci
 </gml:CircleByCenterPoint>
 ```
 
-### Events
+#### Events
 * [onEntering](#onEntering)
 * [onLeaving](#onLeaving)
 * [onStaying](#onStaying)
