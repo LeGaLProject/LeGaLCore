@@ -15,6 +15,9 @@ There are some new attributes and extensions done to NCL in order to support the
 * [mandatory](#mandatory)
 
 ### Events
+* [onEntering](#onEntering)
+* [onLeaving](#onLeaving)
+* [onStaying](#onStaying)
 
 ### Mission Properties
 
@@ -51,3 +54,46 @@ create (2) | Create a media.
 drop (3) | Drop a media.
 
 At runtime, a player is rewarded with a score for every mission or action completed. The same actions presented in Section~\ref{subsubsec:actions} can have a matching reward. To implement such system, a score property was added to missions and media, thus defining the reward for each action executed by the players. This parameter can assume positive integer values.
+
+### Spatial Data and Relationships
+
+In the proposed language, a media node has information about the location of game missions. The node type is application/gml+xml and consists of a GML (Geography Markup Language) with ".gml" extension. GML~\cite{cox2002opengis} is an XML extension developed to express geographic features. The extension uses points, lines, polygons and geometric shapes defined by Cartesian coordinates and associated with spatial reference systems. LeGaL uses GML to specify activation areas for a game mission, thus being able to describe a polygon representing a mission's location.
+
+Location code example below illustrates a media node representing the msSecondChurch mission location (i.e., in the city centre of Fortaleza, Brazil):
+
+``` xml
+<media id="locSecondChurch" type="application/gml+xml" src="media/secondChurchChurch.gml"/>
+```
+
+<img src="./docs/running-second-mission-map.png" width="25%"> <img src="./docs/running-second-mission-media.png" width="50%">
+
+GML code example below describes the locSecondChurch node, which represents a circular area with a radius and coordinates of the place as the centre point:
+
+``` xml
+<?xml version="1.0" encoding="utf-8" ?>
+<gml:CircleByCenterPoint ...>
+
+  <gml:pos srsName="urn:ogc:def:crs:OGC:1.3:CRS84">-38.523074 -3.7279587</gml:pos>
+  <gml:radius uom="m">20</gml:radius>
+
+</gml:CircleByCenterPoint>
+```
+
+The location of players and missions' activation areas is key to the gameplay of LBGs. In this work, an activation area is a planar region defined bi-dimensional coordinates. These areas can be defined as regular or irregular polygons, and circles. The spatial relation between activation areas is the foundation to the RCC (Region Connection Calculus}~\cite{randell1992spatial}. In LeGaL, we have used this definition to create a relation between the player's location and the game map activation areas. We added a set of events to LeGaL, which can be linked to media nodes: onEntering, onLeaving, and onStaying. onEntering is triggered when a player enters the activation area of a mission. Conversely, onLeaving is launched when a player exits an activation area. Finally, onStaying is triggered if a player remains in an activation area during a determined time.
+
+Examples below show examples of connectors and links for the running example, respectively. In this case, a media is executed when a player enters an activation area of the second church:
+
+``` xml
+<casualConnector xconnector="onEnteringStart">
+  <simpleCondition role="onEntering"/>
+  <simpleAction role="start"/>
+</casualConnector>
+```
+
+``` xml
+<link xconnector="space#onEnteringStart">
+  <bind role="onEntering" component="locSecondChurch"/>
+  <bind role="start" component="mdVideo"/>
+</link>
+```
+
