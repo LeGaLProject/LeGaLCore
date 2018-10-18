@@ -109,3 +109,43 @@ Example below illustrates a media node defining an AR object in the game. The me
   <property name="texture" value="media/treasure.jpg"/>
 </media>
 ```
+
+### XML Representation
+
+The textual representation of LeGaL is an XML document. The block structure defines the grouping of language components. As in an NCL application, the document must have a definition header (`<ncl>`), a program header (`<head>`), a program body (`<body>`), and the closing of the document (`</ncl>`). The elements `<head>` and `<body>` must be declared as children of the `<ncl>` element. Definitions of descriptors and connectors are made in the document header, in their respective code blocks. Context and media nodes, links, and other components are defined in the body of the game document. NCL language tokens are used in the definition of the LeGaL document to describe the components and the behaviour of the game. Table below summarises the document components, belonging to NCL, which are used in our extension.
+
+Element | Token | Parameters
+--- | --- | ---
+Media node | `<media>` | id, type, scr, descriptor 
+Context node | `<context>` | id, mandatory, times, visibility, requirements
+Connectors base | `<connectorBase>` | id  
+Connector | `<connector>` | id, condition, action 
+Link | `<link>` | id, xconnector 
+Bind | `<bind>` | component, interface, role, delay  
+Port | `<port>` | id, component  
+Anchor | `<area>` | id, begin, end
+Descriptors base | `<descriptorBase>` | id 
+Descriptor | `<descriptor>` | id, duration, opacity, volume, fontSize, fontColor, fontWeight
+
+First, the game developer must specify the GML document, which contains geolocation points related to the missions. Then, he should define the descriptors, which detail how the game media will execute. After this step, the connectors and links are identified, and then the media must be specified. The next step is to set the ports for the flow composition of the game missions.
+
+Code below exemplifies the basic document structure that LeGaL uses to specify an LBG:
+
+``` xml
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ncl id="" xmlns="http://www.ncl.org.br/NCL3.0/EDTVProfile">
+  <head>    
+    <descriptorBase ...> <!--descriptors--> </descriptorBase>
+    <connectorBase ...> <!--connectors--> </connectorBase>
+  </head>
+  <body>
+    <port .../> <!--initial ports-->
+    <context ...> <!--missions-->
+      <port .../>
+      <media ...> ... </media> <!--media objects-->
+      ... <!--relationships between mission media--> ...
+    </context>
+    ... <!--relationships between missions--> ...
+  </body>
+</ncl>
+```
