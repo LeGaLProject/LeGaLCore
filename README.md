@@ -128,6 +128,10 @@ Examples below show examples of connectors and links for the running example, re
 
 LeGaL supports the use of media nodes to represent Augmented Reality (AR) content in games. In this case, it is necessary to specify a ".obj" file containing the points of a 3D object, a ".mtl" file describing information about the surface of the object, and optionally a ".png" file containing a texture to be applied to the 3d model.
 
+#### Configurable Props
+* [mtlFile](#mtlFile)
+* [texture](#texture)
+
 Example below illustrates a media node defining an AR object in the game. The media node uses the src parameter to specify the ".obj" file and the other files are specified using two distinct properties:
 
 ``` xml
