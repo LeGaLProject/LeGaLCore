@@ -9,6 +9,9 @@ LeGaL inherits several key NCL and NCM 3.0~\cite{soares2005nested} concepts such
 
 There are some new attributes and extensions done to NCL in order to support the modelling of LBGs. This document shows some of these new features.
 
+## Important Links
+* [Get Started](./pages/getting-started.md)
+
 ## Extensions
 * [Mission Properties](#mission-properties)
 * [Game Action and Score](#game-action-and-score)
