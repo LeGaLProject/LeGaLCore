@@ -11,6 +11,8 @@ There are some new attributes and extensions done to NCL in order to support the
 
 ## Important Links
 * [Get Started](./pages/getting-started.md)
+* [LeGaL Presentations](https://github.com/LeGaLProject/LeGaLPresentations)
+* [Examples using LBG Patterns](https://github.com/LeGaLProject/GamePatternExamples)
 
 ## Extensions
 * [Mission Properties](#mission-properties)
