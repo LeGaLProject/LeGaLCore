@@ -15,7 +15,7 @@ In this step, you will import the game and publish it. So the game will be avail
 1. Access LAGARTO tool
 2. Login and click in `Import Game` button in the Game List screen
 
-<img src="../docs/lagarto-game-list-screen.png" width="50%"> <img src="../docs/lagarto-parser-screen.png" width="50%">
+<img src="../docs/lagarto-game-list-screen.png" width="32%"> <img src="../docs/lagarto-parser-screen.png" width="32%">
 
 3. In Import Model screen, first, add location files (.gml)
 4. Then, add media files (.png, .mp3, etc)
@@ -27,8 +27,11 @@ In this step, you will import the game and publish it. So the game will be avail
 
 1. Download LAGARTO Scout APP from PlayStore, for now available only for Android
 2. Login in the APP
+
+<img src="../docs/scout-login-screen.png" width="25%"> <img src="../docs/scout-available-games-screen.png" width="25%"> <img src="../docs/scout-new-instance-screen.png" width="25%">
+
 3. Choose the game created in the list of `Available Games`
 4. Join an instance of the game or create a new one
 5. And start the game
 
-That's it!
+### That's it!
