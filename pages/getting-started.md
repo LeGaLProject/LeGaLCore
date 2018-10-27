@@ -28,7 +28,7 @@ In this step, you will import the game and publish it. So the game will be avail
 1. Download LAGARTO Scout APP from PlayStore, for now available only for Android
 2. Login in the APP
 
-<img src="../docs/scout-login-screen.png" width="25%"> <img src="../docs/scout-available-games-screen.png" width="25%"> <img src="../docs/scout-new-instance-screen.png" width="25%">
+<img src="../docs/scout-login-screen.png" width="23%"> <img src="../docs/scout-available-games-screen.png" width="23%"> <img src="../docs/scout-new-instance-screen.png" width="23%"> <img src="../docs/scout-map-screen.png" width="23%">
 
 3. Choose the game created in the list of `Available Games`
 4. Join an instance of the game or create a new one
