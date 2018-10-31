@@ -1,4 +1,4 @@
-# Evaluation with Developers
+# Evaluating LeGaL with Developers
 
 Here we have some graphics and photos as result of a evaluation performed with NCL developers.
 
