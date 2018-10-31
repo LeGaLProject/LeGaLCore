@@ -35,15 +35,32 @@ In this experiment, we conducted a usability experiment with NCL specialists to 
 
 ## Some graphics
 
-<img src="../docs/q01p01.png" width="25%"> <img src="../docs/q01p02.png" width="25%"> <img src="../docs/q01p03.png" width="25%">
-<img src="../docs/q01p04.png" width="25%"> <img src="../docs/q01p05.png" width="25%"> <img src="../docs/q01p06.png" width="25%">
-<img src="../docs/q01p07.png" width="25%"> <img src="../docs/q01p08.png" width="25%"> <img src="../docs/q01p09.png" width="25%">
-<img src="../docs/q01p10.png" width="25%"> <img src="../docs/q01p11.png" width="25%">
+### From the first questionnaire
 
-<img src="../docs/q02p01.png" width="25%"> <img src="../docs/q02p02.png" width="25%"> <img src="../docs/q02p03.png" width="25%">
-<img src="../docs/q02p04.png" width="25%"> <img src="../docs/q02p05.png" width="25%"> <img src="../docs/q02p06.png" width="25%">
-<img src="../docs/q02p07.png" width="25%"> <img src="../docs/q02p08.png" width="25%"> <img src="../docs/q02p09.png" width="25%">
-<img src="../docs/q02p10.png" width="25%"> <img src="../docs/q02p11.png" width="25%"> <img src="../docs/q02p12.png" width="25%">
+Access in [Portuguese](goo.gl/L5ADu8) or [English](goo.gl/dWxWw1).
 
-<img src="../docs/q03p01.png" width="25%"> <img src="../docs/q03p02.png" width="25%"> <img src="../docs/q03p03.png" width="25%">
-<img src="../docs/q03p04.png" width="25%"> <img src="../docs/q03p05.png" width="25%"> <img src="../docs/q03p06.png" width="25%">
+<img src="../docs/q01p01.png" width="45%"> <img src="../docs/q01p02.png" width="45%">
+<img src="../docs/q01p03.png" width="45%"> <img src="../docs/q01p04.png" width="45%">
+<img src="../docs/q01p05.png" width="45%"> <img src="../docs/q01p06.png" width="45%">
+<img src="../docs/q01p07.png" width="45%"> <img src="../docs/q01p08.png" width="45%">
+<img src="../docs/q01p09.png" width="45%"> <img src="../docs/q01p10.png" width="45%">
+<img src="../docs/q01p11.png" width="45%">
+
+### From the second questionnaire
+
+Access in [Portuguese](goo.gl/1111OX) or [English](goo.gl/LRdcn7).
+
+<img src="../docs/q02p01.png" width="45%"> <img src="../docs/q02p02.png" width="45%">
+<img src="../docs/q02p03.png" width="45%"> <img src="../docs/q02p04.png" width="45%">
+<img src="../docs/q02p05.png" width="45%"> <img src="../docs/q02p06.png" width="45%">
+<img src="../docs/q02p07.png" width="45%"> <img src="../docs/q02p08.png" width="45%">
+<img src="../docs/q02p09.png" width="45%"> <img src="../docs/q02p10.png" width="45%">
+<img src="../docs/q02p11.png" width="45%"> <img src="../docs/q02p12.png" width="45%">
+
+### From the third questionnaire
+
+Access in [Portuguese](goo.gl/XG8aYl) or [English](goo.gl/mBKKyQ).
+
+<img src="../docs/q03p01.png" width="45%"> <img src="../docs/q03p02.png" width="45%">
+<img src="../docs/q03p03.png" width="45%"> <img src="../docs/q03p04.png" width="45%">
+<img src="../docs/q03p05.png" width="45%"> <img src="../docs/q03p06.png" width="45%">
