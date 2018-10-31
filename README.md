@@ -13,7 +13,9 @@ There are some new attributes and extensions done to NCL in order to support the
 - [Get Started](./pages/getting-started.md)
 - [LeGaL Presentations](https://github.com/LeGaLProject/LeGaLPresentations)
 - [Examples using LBG Patterns](https://github.com/LeGaLProject/GamePatternExamples)
-- [Evaluation with Developers](./pages/developer-evaluation.md)
+- [Evaluating LeGaL with Developers](./pages/developer-evaluation.md)
+- [Modeling the game Audiorio using LeGaL](https://github.com/LeGaLProject/Audiorio)
+- [A Walk between Churches in Fortaleza City](https://github.com/LeGaLProject/ChurchesInFortaleza)
 
 ## Extensions
 
