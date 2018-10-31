@@ -27,7 +27,7 @@ Then, we invite the testers to perform two activities:
 
 <img src="../docs/evaluation-activity-1.png" width="35%">
 
-Access the codes of the first activity in: [User 1]("../docs/code-user1-activity1.ncl") | [User 2]("../docs/code-user2-activity1.ncl") | [User 3]("../docs/code-user3-activity1.ncl") | [User 4]("../docs/code-user4-activity1.ncl") | [User 5]("../docs/code-user5-activity1.ncl")
+Access the codes of the first activity in: [User 1](../docs/code-user1-activity1.ncl) | [User 2](../docs/code-user2-activity1.ncl) | [User 3](../docs/code-user3-activity1.ncl) | [User 4](../docs/code-user4-activity1.ncl) | [User 5](../docs/code-user5-activity1.ncl)
 
 `Second activity`: The game has two teams (A and B), in which each team consists of a player. Team A should visit the church and then the castle. Team B should visit the hospital and then the castle. Whoever arrives first in the castle wins the game.
 
@@ -37,7 +37,7 @@ Access the codes of the first activity in: [User 1]("../docs/code-user1-activity
 
 <img src="../docs/evaluation-activity-2.png" width="35%">
 
-Access the codes of the second activity in: [User 1]("../docs/code-user1-activity2.ncl") | [User 2]("../docs/code-user2-activity2.ncl") | [User 3]("../docs/code-user3-activity2.ncl") | [User 4]("../docs/code-user4-activity2.ncl") | [User 5]("../docs/code-user5-activity2.ncl")
+Access the codes of the second activity in: [User 1](../docs/code-user1-activity2.ncl) | [User 2](../docs/code-user2-activity2.ncl) | [User 3](../docs/code-user3-activity2.ncl) | [User 4](../docs/code-user4-activity2.ncl) | [User 5](../docs/code-user5-activity2.ncl)
 
 ## Some graphics
 
